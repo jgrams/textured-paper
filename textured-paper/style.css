@@ -471,6 +471,7 @@ html {
 body {
 	background: #fff;
 	background-image: url(texture.svg);
+	background-size: cover;
 	/* Fallback for when there is no custom background color defined. */
 }
 
