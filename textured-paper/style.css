@@ -470,6 +470,7 @@ html {
 
 body {
 	background: #fff;
+	background-image: url(texture.svg);
 	/* Fallback for when there is no custom background color defined. */
 }
 
