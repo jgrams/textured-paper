@@ -1,4 +1,2 @@
-FROM node:latest
-    WORKDIR /usr/src/service
+FROM php:latest
 	COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
-    COPY wprig-texturedpaper/ .
