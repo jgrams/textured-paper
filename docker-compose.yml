@@ -13,29 +13,20 @@ services:
        MYSQL_PASSWORD: wordpress
 
    wordpress:
-     image: wordpress:latest
+     build: .
      depends_on:
        - db
      restart: always
      ports:
        - "8000:80"
+       - "3000:3000"
+       - "3001:3001"
      environment:
        WORDPRESS_DB_HOST: db:3306
        WORDPRESS_DB_USER: wordpress
        WORDPRESS_DB_PASSWORD: wordpress
        WORDPRESS_DB_NAME: wordpress
      volumes:
-      - ./wprig-texturedpaper/:/var/www/html/wp-content/themes/wprig-texturedpaper/
-
-   wprig:
-     build: .
-     depends_on:
-       - wordpress
-     ports:
-       - "3000:3000"
-       - "3001:3001"
-     restart: always
-     volumes:
-      - ./wprig-texturedpaper/:/var/www/html
+      - ./wprig/:/var/www/html/wp-content/themes/wprig/
 volumes:
     db_data: {}

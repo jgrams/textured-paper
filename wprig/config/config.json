@@ -1,0 +1,16 @@
+{
+  "theme": {
+    "slug": "texturedpaper",
+    "name": "Textured Paper",
+    "author": "Growling Mole",
+    "PHPNamespace": "WP_Rig\\WP_Rig"
+  },
+  "dev": {
+    "browserSync": {
+      "live": true,
+      "proxyURL": "wordpress",
+      "bypassPort": "3000",
+      "https": false
+    }
+  }
+}

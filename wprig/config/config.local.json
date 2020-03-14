@@ -1,0 +1,6 @@
+{
+  "browserSync": {
+    "host": "wordpress",
+    "proxyURL": "wordpress:80"
+  }
+}
