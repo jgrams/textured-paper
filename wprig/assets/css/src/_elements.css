@@ -23,7 +23,7 @@ html {
 /* stylelint-disable */
 body {
 	background: #fff;
-	background-image: url(../../images/src/placeholder.svg);
+	background-image: url(../images/texture.svg);
 	/* Fallback for when there is no custom background color defined. */
 }
 /* stylelint-enable */
