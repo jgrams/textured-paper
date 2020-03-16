@@ -1,3 +1,6 @@
 # Vendor files #
 ######################
 wprig/vendor
+wprig/node_modules
+package-lock.json
+composer.lock
