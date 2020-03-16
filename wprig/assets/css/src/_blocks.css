@@ -32,6 +32,14 @@
  * .wp-block-archives
  */
 
+.wp-block-image {
+	border: 1px solid black;
+}
+
+.entry-content > .wp-block-image {
+	padding: 0;
+}
+
 .wp-block-quote.is-large,
 .wp-block-quote.is-style-large {
 	margin: 1.5em auto;
