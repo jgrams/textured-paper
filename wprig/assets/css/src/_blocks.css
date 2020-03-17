@@ -32,8 +32,9 @@
  * .wp-block-archives
  */
 
-.wp-block-image {
-	border: 1px solid black;
+.wp-block-image,
+.wp-block-gallery {
+	border: 1px solid gray;
 }
 
 .entry-content > .wp-block-image {
