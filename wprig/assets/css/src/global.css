@@ -72,10 +72,15 @@
 # Layouts
 --------------------------------------------------------------*/
 .site {
-	padding: 0 .7rem;
 	background-image: url(../images/texture.svg);
     display: flex;
 	flex-direction: column;
+	align-items: stretch;
+	padding: 1rem .5rem
+}
+
+.primary-sidebar {
+	min-width: 100%;
 }
 
 @media (--sidebar-query) {
@@ -87,6 +92,7 @@
 		    "content sidebar"
 		    "footer sidebar";
 		grid-template-columns: 1fr auto;
+		padding: 0 0 0 .7rem;
 	}
 
 	.site-header {
