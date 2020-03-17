@@ -75,16 +75,10 @@
 	background-image: url(../images/texture.svg);
     display: flex;
 	flex-direction: column;
-	align-items: stretch;
 	padding: 1rem .5rem
 }
 
-.primary-sidebar {
-	min-width: 100%;
-}
-
 @media (--sidebar-query) {
-
 	.has-sidebar .site {
 		display: grid;
 		grid-template-areas: 
@@ -100,16 +94,17 @@
 	}
 
 	.site-main {
-		margin: 2rem 1rem 0;
+		grid-area: content;
+	}
+
+	.blog .site-main {
 		display: grid;
-		grid-template-columns: repeat(3, minmax(20em, 1fr));
-		grid-auto-flow: dense;
-		grid-gap: 2rem;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 1.7em;
 	}
 
 	.primary-sidebar {
 		grid-area: sidebar;
-		min-width: 0;
 	}
 
 	.site-footer {
@@ -229,15 +224,14 @@ select {
 }
 
 .site-branding {
-	text-align: center;
-	padding: 60px 0 1.75em;
+	text-align: left;
+	text-align: left;
+	padding: 60px 4rem 1.75em;
 }
 
 .site-title {
-	margin: 0 1em;
 	font-family: var(--highlight-font-family);
-	font-stretch: condensed;
-	font-size: 38px;
+	font-size: 48px;
 	font-weight: 700;
 	line-height: 1.2;
 	color: #333332;
