@@ -72,22 +72,20 @@
 # Layouts
 --------------------------------------------------------------*/
 .site {
-	padding: 0 auto;
-	max-width: 100%;
+	padding: 0 .7rem;
 	background-image: url(../images/texture.svg);
+    display: flex;
+	flex-direction: column;
 }
 
 @media (--sidebar-query) {
 
 	.has-sidebar .site {
-		padding: 0 1em;
 		display: grid;
 		grid-template-areas: 
 		    "site-header sidebar"
 		    "content sidebar"
 		    "footer sidebar";
-		grid-gap: 2rem;
-		background-image: url(../images/texture.svg);
 		grid-template-columns: 1fr auto;
 	}
 
@@ -106,7 +104,6 @@
 	.primary-sidebar {
 		grid-area: sidebar;
 		min-width: 0;
-		max-width: 2em;
 	}
 
 	.site-footer {

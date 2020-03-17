@@ -8,14 +8,6 @@
 	margin-bottom: 1.5em;
 }
 
-.primary-sidebar .widget {
-	writing-mode: vertical-rl;
-}
-
-.primary-sidebar .widget ul {
-	display: none;
-}
-
 .widget-area .widget {
 	margin-left: 0;
 	margin-right: 0;
@@ -55,6 +47,9 @@
 @media (--sidebar-query) {
 	.widget_search {
 		text-orientation: upright;
+	}
+	.widget {
+		writing-mode: vertical-lr;
 	}
 }
 
