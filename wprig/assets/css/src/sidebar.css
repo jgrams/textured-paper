@@ -7,7 +7,7 @@
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
 	min-width: 100%;
-	background: repeating-linear-gradient(45deg, #3f87a6, #ebf8e1 7%, #f69d3c 10%);
+	background: var(--background-color-bar);
 }
 
 @media (--content-query) {

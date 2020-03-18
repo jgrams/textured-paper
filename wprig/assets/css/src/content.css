@@ -29,12 +29,13 @@
 */
 
 .entry {
-	margin: 1rem;
-	transition: margin 6.4s
+	padding: 1rem;
+	transition: margin 6.4s, font-size 
 }
 
 .entry:hover {
-	margin: 0;
+	padding: 0;
+    font-size: var(--font-size-large);
 }
 
 .entry-meta,
