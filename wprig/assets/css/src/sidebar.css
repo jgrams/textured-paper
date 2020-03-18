@@ -7,7 +7,6 @@
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
 	min-width: 100%;
-	background: var(--background-color-bar);
 }
 
 @media (--content-query) {

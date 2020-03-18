@@ -30,7 +30,7 @@
 
 .entry {
 	padding: 1rem;
-	transition: margin 6.4s, font-size 
+	transition: padding 6.4s, font-size 6.4s;
 }
 
 .entry:hover {
@@ -43,6 +43,10 @@
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
 	font-size: 80%;
+}
+
+.blog .entry-footer {
+	display: none;
 }
 
 .entry-meta {

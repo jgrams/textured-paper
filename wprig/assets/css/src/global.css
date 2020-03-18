@@ -72,7 +72,7 @@
 # Layouts
 --------------------------------------------------------------*/
 .site {
-	background-image: url(../images/texture.svg);
+	background: var(--background-color-bar);
     display: flex;
 	flex-direction: column;
 	padding: 1rem .5rem
@@ -230,7 +230,7 @@ select {
 
 .site-title {
 	font-family: var(--highlight-font-family);
-	font-size: 48px;
+	font-size: var(--font-size-larger);
 	font-weight: 700;
 	line-height: 1.2;
 	color: #333332;
