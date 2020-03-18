@@ -29,7 +29,12 @@
 */
 
 .entry {
-	margin-bottom: 1rem;
+	margin: 1rem;
+	transition: margin 6.4s
+}
+
+.entry:hover {
+	margin: 0;
 }
 
 .entry-meta,

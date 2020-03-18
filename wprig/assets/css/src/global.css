@@ -100,7 +100,7 @@
 	.blog .site-main {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 1.7em;
+		grid-gap: .4rem;
 	}
 
 	.primary-sidebar {
@@ -224,9 +224,8 @@ select {
 }
 
 .site-branding {
-	text-align: left;
-	text-align: left;
-	padding: 60px 4rem 1.75em;
+	text-align: right;
+	margin: 4rem 9rem 1rem 1rem;
 }
 
 .site-title {
