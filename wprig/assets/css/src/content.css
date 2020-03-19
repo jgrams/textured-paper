@@ -28,25 +28,11 @@
 }
 */
 
-.entry {
-	padding: 1rem;
-	transition: padding 6.4s, font-size 6.4s;
-}
-
-.entry:hover {
-	padding: 0;
-    font-size: var(--font-size-large);
-}
-
 .entry-meta,
 .entry-footer {
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
 	font-size: 80%;
-}
-
-.blog .entry-footer {
-	display: none;
 }
 
 .entry-meta {
@@ -301,4 +287,44 @@
 
 .has-larger-font-size {
 	font-size: var(--font-size-larger);
+}
+
+/*--------------------------------------------------------------
+# Blog content for display on frontpage
+--------------------------------------------------------------*/
+
+
+.blog figure,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+	padding: 1.1rem;
+	transition: padding 1.85s;
+	transition-timing-function: ease-in;
+}
+
+.blog figure {
+	margin: 0;
+}
+
+.blog figure:hover,
+      h1:hover,
+      h2:hover,
+      h3:hover,
+      h4:hover,
+      h5:hover,
+      h6:hover  {
+	padding: 0;
+    transition-timing-function: ease;
+}
+
+.blog img {
+	border: 1px solid grey;
+}
+
+.blog .entry-footer {
+	display: none;
 }

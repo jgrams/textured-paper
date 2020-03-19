@@ -31,16 +31,7 @@
  * .wp-block-categories
  * .wp-block-archives
  */
-
-.wp-block-image,
-.wp-block-gallery {
-	border: 1px solid gray;
-}
-
-.entry-content > .wp-block-image {
-	padding: 0;
-}
-
+ 
 .wp-block-quote.is-large,
 .wp-block-quote.is-style-large {
 	margin: 1.5em auto;

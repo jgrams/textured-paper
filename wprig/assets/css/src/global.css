@@ -99,8 +99,9 @@
 
 	.blog .site-main {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: .4rem;
+		grid-template-columns: repeat(3, minmax(min-content, 33.33%));
+		grid-auto-rows: fit-content(45vh);
+		grid-gap: .3rem;
 	}
 
 	.primary-sidebar {
@@ -245,7 +246,7 @@ select {
 	margin: 0.4375em 0 0;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
-	font-size: 17px;
+	font-size: var(--font-size-large);
 	font-weight: inherit;
 	line-height: 1.4;
 	word-wrap: break-word;
