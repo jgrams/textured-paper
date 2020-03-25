@@ -85,7 +85,7 @@
 		    "site-header sidebar"
 		    "content sidebar"
 		    "footer sidebar";
-		grid-template-columns: 1fr auto;
+		grid-template-columns: 1fr 10em;
 		padding: 0 0 0 .7rem;
 	}
 

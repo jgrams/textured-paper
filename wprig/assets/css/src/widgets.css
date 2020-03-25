@@ -17,6 +17,10 @@
 	line-height: 1.8;
 }
 
+.widget ul {
+
+}
+
 .widget_archive ul,
 .widget_categories ul,
 .widget_meta ul,
@@ -42,15 +46,6 @@
 
 .widget_categories .children {
 	padding-top: 0;
-}
-
-@media (--sidebar-query) {
-	.widget_search {
-		text-orientation: upright;
-	}
-	.widget {
-		writing-mode: vertical-lr;
-	}
 }
 
 .widget_search .search-submit {
@@ -189,4 +184,30 @@
 .textwidget {
 	font-size: 80%;
 	line-height: 1.3;
+}
+
+/* Custom theme CSS */
+@media (--sidebar-query) {
+	.widget_search {
+		text-orientation: upright;
+	}
+	.widget {
+		writing-mode: vertical-lr;
+		display: flex;
+		flex-direction: column-reverse;
+		transition: visibility 1s linear;
+	}
+	.primary-sidebar {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.widget ul {
+		writing-mode: horizontal-tb;
+		visibility: hidden;
+	}
+
+	.widget:hover ul {
+		visibility: visible;
+	}
 }
