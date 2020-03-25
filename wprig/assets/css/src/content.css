@@ -294,29 +294,13 @@
 --------------------------------------------------------------*/
 
 
-.blog figure,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
+.blog figure {
 	padding: 1.1rem;
 	transition: padding 1.85s;
 	transition-timing-function: ease-in;
 }
 
-.blog figure {
-	margin: 0;
-}
-
-.blog figure:hover,
-      h1:hover,
-      h2:hover,
-      h3:hover,
-      h4:hover,
-      h5:hover,
-      h6:hover  {
+.blog figure:hover {
 	padding: 0;
     transition-timing-function: ease;
 }

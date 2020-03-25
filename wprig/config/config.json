@@ -10,7 +10,8 @@
       "live": true,
       "proxyURL": "wordpress",
       "bypassPort": "3000",
-      "https": false
+      "https": false,
+      "open": false
     }
   }
 }
