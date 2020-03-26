@@ -17,10 +17,6 @@
 	line-height: 1.8;
 }
 
-.widget ul {
-
-}
-
 .widget_archive ul,
 .widget_categories ul,
 .widget_meta ul,
@@ -187,6 +183,25 @@
 }
 
 /* Custom theme CSS */
+.widget-title {
+	position: relative;
+	max-width: max-content;
+}
+
+.widget-title::before {
+  position: absolute;
+  bottom: 0px;
+  content: "";
+  background: rgb(51, 51, 51, 0.25);
+  height: 5px;
+  width: 0;
+  transition: all .6s ease;
+}
+
+.widget:hover .widget-title::before {
+	width: 100%;
+}
+
 @media (--sidebar-query) {
 	.widget_search {
 		text-orientation: upright;
@@ -209,5 +224,16 @@
 
 	.widget:hover ul {
 		visibility: visible;
+	}
+
+	.widget-title::before {
+		  height: 0;
+		  width: 5px;
+		  bottom: auto;
+	}
+
+	.widget:hover .widget-title::before {
+		height: 100%;
+		width: 5px;
 	}
 }
