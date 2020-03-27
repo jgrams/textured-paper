@@ -190,7 +190,7 @@
 
 .widget-title::before {
   position: absolute;
-  bottom: 0px;
+  bottom: 2px;
   content: "";
   background: rgb(51, 51, 51, 0.25);
   height: 5px;
@@ -220,6 +220,7 @@
 	.widget ul {
 		writing-mode: horizontal-tb;
 		visibility: hidden;
+		height: min-content;
 	}
 
 	.widget:hover ul {
