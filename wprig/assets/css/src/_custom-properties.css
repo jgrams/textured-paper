@@ -33,7 +33,7 @@
 
 	--color-quote-border: #000;
 	--color-quote-citation: #6c7781;
-	--color-menu-item-underline: rgb(51, 51, 51, 0.25);
+	--color-menu-item-underline: rgba(242, 45, 221, 0.9);
 
 	--background-color-bar: repeating-linear-gradient(135deg,#3f87a6,#ebf8e1 7%,#f69d3c 10%);
 
