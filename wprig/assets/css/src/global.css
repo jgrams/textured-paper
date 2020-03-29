@@ -72,43 +72,36 @@
 # Layouts
 --------------------------------------------------------------*/
 .site {
-	background: var(--color-background);
-    display: flex;
-	flex-direction: column;
-	text-align: right;
+	margin: 0 auto;
+	max-width: 100%;
 }
 
 @media (--sidebar-query) {
+
 	.has-sidebar .site {
+		margin: 0 1em;
 		display: grid;
-		grid-template-areas: 
-		    "site-header sidebar"
-		    "content sidebar"
-		    "footer sidebar";
-		grid-template-columns: 7fr 1fr;
+		grid-template-columns: 3fr 1fr;
+		grid-gap: 2rem;
+		justify-content: center;
 	}
 
 	.site-header {
-		grid-area: site-header;
+		grid-column: span 2;
 	}
 
 	.site-main {
-		grid-area: content;
-	}
-
-	.blog .site-main {
-		display: grid;
-		grid-template-columns: repeat(2, 50%);
-		grid-auto-rows: fit-content(45vh);
-		grid-gap: .3rem;
+		grid-column: 1;
+		min-width: 0;
 	}
 
 	.primary-sidebar {
-		grid-area: sidebar;
+		grid-column: 2;
+		min-width: 0;
 	}
 
 	.site-footer {
-		grid-area: footer;
+		grid-column: span 2;
 	}
 }
 
@@ -224,13 +217,15 @@ select {
 }
 
 .site-branding {
-	text-align: right;
-	margin: 4rem 9rem 1rem 1rem;
+	text-align: center;
+	padding: 60px 0 1.75em;
 }
 
 .site-title {
+	margin: 0 1em;
 	font-family: var(--highlight-font-family);
-	font-size: 56px;
+	font-stretch: condensed;
+	font-size: 38px;
 	font-weight: 700;
 	line-height: 1.2;
 	color: #333332;
@@ -245,7 +240,7 @@ select {
 	margin: 0.4375em 0 0;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
-	font-size: var(--font-size-large);
+	font-size: 17px;
 	font-weight: inherit;
 	line-height: 1.4;
 	word-wrap: break-word;
@@ -478,7 +473,6 @@ select {
 	font-stretch: condensed;
 }
 
-
 @media (--content-query) {
 
 	.site-main .comment-navigation,
@@ -573,7 +567,8 @@ select {
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
-	padding: 3em 0;
+	margin: 1em 0 0;
+	padding: 2em 0;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
 }
@@ -602,13 +597,63 @@ were hidden (via .neverending) before. */
 }
 
 /*--------------------------------------------------------------
-# Textured Paper CSS
+# Textured Paper
 --------------------------------------------------------------*/
 
-.site-main {
-	padding-left: 1em;
+body {
+	background: var(--color-background);
+}
+
+.site {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+
+.site-title {
+	font-size: 56px;
+	font-stretch: expanded;
+	margin: 0;
 }
 
 .site-main {
-	background-color: var(--color-content);
+	background: var(--color-content);
+}
+
+.site-branding {
+	text-align: right;
+	margin: 0 1em;
+}
+
+@media (--sidebar-query) {
+	.has-sidebar .site {
+	    grid-template-areas: 
+	        "header sidebar"
+	        "content sidebar"
+	        "footer sidebar";
+	    grid-template-columns: 7fr 1fr;
+    }
+
+    .site-header {
+    	grid-area: "header";
+    	grid-column: span 1;
+    }
+
+    .site-main {
+    	grid-area: "content";
+    }
+
+    .blog .site-main {
+    	display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: .3rem;
+    }
+
+    .primary-sidebar {
+    	grid-area: sidebar;
+    }
+     .site-footer {
+     	grid-area: footer;
+     }
+
 }
