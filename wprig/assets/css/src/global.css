@@ -72,7 +72,7 @@
 # Layouts
 --------------------------------------------------------------*/
 .site {
-	background: var(--background-color-bar);
+	background: var(--color-background);
     display: flex;
 	flex-direction: column;
 	text-align: right;
@@ -609,7 +609,6 @@ were hidden (via .neverending) before. */
 	padding-left: 1em;
 }
 
-.site-main,
-.site-footer {
-	background-color: lightcyan;
+.site-main {
+	background-color: var(--color-content);
 }
