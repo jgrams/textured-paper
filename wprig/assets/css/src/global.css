@@ -75,7 +75,7 @@
 	background: var(--background-color-bar);
     display: flex;
 	flex-direction: column;
-	padding: 1rem .5rem
+	text-align: right;
 }
 
 @media (--sidebar-query) {
@@ -85,8 +85,7 @@
 		    "site-header sidebar"
 		    "content sidebar"
 		    "footer sidebar";
-		grid-template-columns: 1fr 10em;
-		padding: 0 0 0 .7rem;
+		grid-template-columns: 7fr 1fr;
 	}
 
 	.site-header {
@@ -99,7 +98,7 @@
 
 	.blog .site-main {
 		display: grid;
-		grid-template-columns: repeat(3, minmax(min-content, 33.33%));
+		grid-template-columns: repeat(2, 50%);
 		grid-auto-rows: fit-content(45vh);
 		grid-gap: .3rem;
 	}
@@ -479,6 +478,7 @@ select {
 	font-stretch: condensed;
 }
 
+
 @media (--content-query) {
 
 	.site-main .comment-navigation,
@@ -573,8 +573,7 @@ select {
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
-	margin: 1em 0 0;
-	padding: 2em 0;
+	padding: 3em 0;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
 }
@@ -600,4 +599,17 @@ select {
 were hidden (via .neverending) before. */
 .infinity-end.neverending .site-footer {
 	display: block;
+}
+
+/*--------------------------------------------------------------
+# Textured Paper CSS
+--------------------------------------------------------------*/
+
+.site-main {
+	padding-left: 1em;
+}
+
+.site-main,
+.site-footer {
+	background-image: url(../images/texture.svg);
 }

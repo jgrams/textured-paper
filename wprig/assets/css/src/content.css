@@ -297,12 +297,10 @@
 .blog figure {
 	padding: 1.1rem;
 	transition: padding 1.85s;
-	transition-timing-function: ease-in;
 }
 
 .blog figure:hover {
 	padding: 0;
-    transition-timing-function: ease;
 }
 
 .blog img {
