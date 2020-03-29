@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 .primary-sidebar {
-	padding: 1rem .5rem;
+	padding: 1rem 2rem;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
 	min-width: 100%;

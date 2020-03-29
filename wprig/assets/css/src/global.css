@@ -611,5 +611,5 @@ were hidden (via .neverending) before. */
 
 .site-main,
 .site-footer {
-	background-image: url(../images/texture.svg);
+	background-color: lightcyan;
 }

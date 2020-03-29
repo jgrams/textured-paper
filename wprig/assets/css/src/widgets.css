@@ -223,14 +223,23 @@
 		writing-mode: horizontal-tb;
 		visibility: hidden;
 		height: min-content;
+		background-color: ;
+  		min-width: 160px;
+  		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		border-top: 4.5px solid var(--color-menu-item-underline);
+  		z-index: 1;
 	}
 
 	.widget:hover ul {
 		visibility: visible;
 	}
 
+	.widget li {
+		padding: 12px 16px;
+	}
+
 	.widget-title {
-		max-width: max-content;
+		height: max-content;
 	}
 
 	.widget-title::before {
