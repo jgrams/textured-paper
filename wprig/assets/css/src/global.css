@@ -82,7 +82,6 @@
 		margin: 0 1em;
 		display: grid;
 		grid-template-columns: 3fr 1fr;
-		grid-gap: 2rem;
 		justify-content: center;
 	}
 
@@ -622,36 +621,62 @@ body {
 
 .site-branding {
 	text-align: right;
-	margin: 0 1em;
+	padding: 30px 1em .75em;
+}
+
+.site-description {
+	font-size: 23px;
+}
+
+.site-header {
+	height: max-content;
+}
+
+.site-header::after {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: .70em;
+	width: 100vw;
+	background: var(--color-background);
+	content: '';
 }
 
 @media (--sidebar-query) {
 	.has-sidebar .site {
 	    grid-template-areas: 
-	        "header sidebar"
-	        "content sidebar"
+	        "header header"
+	        "main sidebar"
 	        "footer sidebar";
 	    grid-template-columns: 7fr 1fr;
+	    grid-template-rows: auto 1fr auto;
     }
 
     .site-header {
-    	grid-area: "header";
+    	grid-area: header;
     	grid-column: span 1;
+    	position: sticky;
+    	top: 0;
+    	z-index: 1;
+    	background: var(--color-background);
     }
 
     .site-main {
-    	grid-area: "content";
+    	grid-area: main;
     }
 
     .blog .site-main {
     	display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-gap: .3rem;
+		grid-gap: 1em;
     }
 
     .primary-sidebar {
     	grid-area: sidebar;
+    	position: fixed;
+    	max-height: 100vh;
     }
+
      .site-footer {
      	grid-area: footer;
      }

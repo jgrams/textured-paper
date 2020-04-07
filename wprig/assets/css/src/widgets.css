@@ -223,10 +223,10 @@
 		writing-mode: horizontal-tb;
 		visibility: hidden;
 		height: min-content;
-		background-color: ;
-  		min-width: 160px;
+		width: min-content;
   		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   		border-top: 4.5px solid var(--color-menu-item-underline);
+  		background: white;
   		z-index: 1;
 	}
 
