@@ -79,7 +79,7 @@
 @media (--sidebar-query) {
 
 	.has-sidebar .site {
-		margin: 0 1em;
+		margin: 1em 1em 0 1em;
 		display: grid;
 		grid-template-columns: 3fr 1fr;
 		justify-content: center;
@@ -645,14 +645,14 @@ body {
 @media (--sidebar-query) {
 	.has-sidebar .site {
 	    grid-template-areas: 
-	        "header header"
+	        "header headerimage"
 	        "main sidebar"
 	        "footer sidebar";
 	    grid-template-columns: 7fr 1fr;
 	    grid-template-rows: auto 1fr auto;
     }
 
-    .site-header {
+    .site-branding {
     	grid-area: header;
     	grid-column: span 1;
     	position: sticky;
@@ -665,6 +665,16 @@ body {
     	grid-area: main;
     }
 
+    .header-image {
+    	grid-area: headerimage;
+    	max-width: 15rem;
+    }
+
+    .site-header {
+    	display: grid;
+    	justify-content: end;
+    }
+
     .blog .site-main {
     	display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -673,7 +683,6 @@ body {
 
     .primary-sidebar {
     	grid-area: sidebar;
-    	position: fixed;
     	max-height: 100vh;
     }
 

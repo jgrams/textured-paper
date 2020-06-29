@@ -294,19 +294,19 @@
 --------------------------------------------------------------*/
 
 
-.blog figure {
+.site-main figure {
 	border: 1.1rem solid transparent;
 	transition: border 1.85s;
 }
 
-.blog figure:hover {
+.site-main figure:hover {
 	border: 1.1rem solid teal;
 }
 
-.blog img {
+.site-main img {
 	border: 1px solid grey;
 }
 
-.blog .entry-footer {
+.site-main .entry-footer {
 	display: none;
 }
